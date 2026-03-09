@@ -100,13 +100,6 @@
       form.reset();
       form.hidden = true;
       if (thanks) thanks.hidden = false;
-
-      if (typeof gtag === 'function') {
-        gtag('event', 'generate_lead', {
-          event_category: 'contact',
-          event_label: 'contact_form_submit'
-        });
-      }
     } catch (error) {
       showAlert(['送信に失敗しました。時間をおいて再度お試しください。']);
       if (submitBtn) {
