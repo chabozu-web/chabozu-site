@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chabozu-web.github.io/chabozu-site/sitemap.xml
