@@ -1,14 +1,12 @@
 :root{
   /* ベース */
-  --bg: #ffffff;        /* 白 */
-  --ink: #141414;       /* 墨 */
+  --bg: #ffffff;        
+  --ink: #141414;      
   --muted: #4b4b4b;
   --line: rgba(20,20,20,.16);
   --card: rgba(255,255,255,.70);
   --shadow: 0 10px 30px rgba(0,0,0,.08);
   --radius: 20px;
-
-  /* 差し色（後で深緑/琥珀などに差し替え） */
   --accent: #2b4b3a;
 }
 
@@ -28,7 +26,7 @@ a:hover{ text-decoration:underline; text-underline-offset:.2em; }
 
 /* layout */
 .container{
-  width:min(980px, calc(100% - 40px)); /* 少し狭めて整う */
+  width:min(980px, calc(100% - 40px)); 
   margin:0 auto;
 }
 
@@ -69,8 +67,6 @@ a:hover{ text-decoration:underline; text-underline-offset:.2em; }
 .nav{ display:flex; gap:16px; align-items:center; }
 .nav a{ font-size:14px; color:var(--muted); }
 .nav a.btn{ color: var(--ink); }
-
-/* ヘッダー内のボタン文字色を白に */
 .nav a.btn{
   color: var(--bg) !important;
   text-decoration: none;
@@ -323,28 +319,22 @@ input:focus, textarea:focus{
   .grid3{ grid-template-columns: 1fr; }
   .about{ grid-template-columns: 1fr; }
 
-  /* ナビはCTAだけ見せる */
   .nav{ gap:12px; }
   .nav a{ display:none; }
   .nav a.btn{ display:inline-flex; }
-
-  /* スマホはFVの中央寄せが効きやすい */
   .hero__copy{ max-width: 680px; }
 }
 
-/* labelを通常のインラインに戻して「必須」を行内に */
 .form__row label{
   display: block;
   font-size: 14px;
 }
 
-/* 入力は下に余白を作って配置 */
 .form__row input,
 .form__row textarea{
   margin-top: 8px;
 }
 
-/* 必須バッジは行内表示に固定 */
 .req{
   display: inline-flex;
   align-items: center;
