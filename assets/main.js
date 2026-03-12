@@ -100,7 +100,11 @@
       form.reset();
       form.hidden = true;
       if (thanks) thanks.hidden = false;
+      if (typeof gtag === 'function') {
+        gtag('event', 'contact_submit');
+      }
     } catch (error) {
+      console.error(error);
       showAlert(['送信に失敗しました。時間をおいて再度お試しください。']);
       if (submitBtn) {
         submitBtn.disabled = false;
