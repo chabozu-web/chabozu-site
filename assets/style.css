@@ -74,7 +74,14 @@ a:hover{ text-decoration:underline; text-underline-offset:.2em; }
 
 
 /* hero */
-.hero{ padding:72px 0 56px; }
+.hero {
+  padding:72px 0 56px;
+  background-image:
+    linear-gradient(to right, rgba(20,20,20,0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(20,20,20,0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
 .hero__inner{
   display:grid;
   grid-template-columns: 1.25fr .75fr;
@@ -134,6 +141,37 @@ a:hover{ text-decoration:underline; text-underline-offset:.2em; }
 }
 .card__line{ height:1px; background: var(--line); margin:14px 0; }
 .card__text{ font-size:16px; }
+
+.hero__card .card{
+  background: #fff;
+  border: 1.5px solid rgba(20,20,20,.12);
+  border-radius: 24px;
+  padding: 28px 30px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.04);
+}
+
+.hero__card .card__title{
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink);
+}
+
+.hero__card .card__line{
+  width: 44px;
+  height: 2px;
+  background: rgba(20,20,20,.08);
+  margin: 16px 0 18px;
+}
+
+.hero__card .list{
+  padding-left: 20px;
+}
+
+.hero__card .list li{
+  margin: 10px 0;
+}
 
 /* sections */
 .section{ padding:56px 0; }
@@ -415,3 +453,4 @@ textarea:focus{
 .pricing-card--recommended h3 {
   color:#fff;
 }
+
