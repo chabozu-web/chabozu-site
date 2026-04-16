@@ -13,11 +13,12 @@
 *{ box-sizing:border-box; }
 html{ scroll-behavior:smooth; }
 body{
-  margin:0;
-  font-family: ui-sans-serif, system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
+  margin: 0;
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
   color: var(--ink);
   background: var(--bg);
-  line-height:1.75;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
 }
 
 /* links */
@@ -56,7 +57,7 @@ a:hover{ text-decoration:underline; text-underline-offset:.2em; }
   padding:14px 0;
 }
 .brand{ display:flex; flex-direction:column; gap:2px; }
-.brand__name{ font-weight:700; letter-spacing:.06em; }
+.brand__name{ font-weight:700; letter-spacing:.04em; }
 .brand__sub{
   font-size:12px;
   color:var(--muted);
@@ -303,15 +304,17 @@ textarea:focus{
 
 /* buttons */
 .btn{
-  display:inline-flex; align-items:center; justify-content:center;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
   gap:8px;
   padding:12px 16px;
-  border-radius: 999px;
+  border-radius: 14px;
   border:1px solid var(--ink);
   background: var(--ink);
   color: var(--bg);
   font-weight:700;
-  letter-spacing:.04em;
+  letter-spacing:.02em;
   cursor:pointer;
   text-decoration:none;
 }
